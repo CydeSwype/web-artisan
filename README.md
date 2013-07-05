@@ -2,7 +2,7 @@
 
 ## Description
 
-This bundle exposes Laravel's Artisan CLI to the web. As such, it probably should not be used in a production environment.
+Forked with love from Joe C. Wallace.  This bundle exposes Laravel's Artisan CLI to the web. As such, it probably should not be used in a production environment.  Added some additional interactive features on top of what Joe has put together.
 
 ## Installation
 
@@ -13,7 +13,7 @@ Add the following to your app's composer.json:
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/joecwallace/web-artisan"
+            "url": "https://github.com/cydeswype/web-artisan"
         }
     ],
     "require": {
