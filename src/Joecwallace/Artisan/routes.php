@@ -9,6 +9,10 @@ Route::get(Config::get('artisan::handles').'{uri}', function($uri = '')
 
     if ( ! empty($uri)) {
         $args = explode('+', trim($uri, '/'));
+    } else {
+        // no specific command passed, so show interactive help/list instead
+        include 'ArtisanMenu.php';
+        exit;
     }
 
     Runner::run($args);
